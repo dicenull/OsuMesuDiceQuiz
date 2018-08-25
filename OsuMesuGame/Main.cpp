@@ -17,7 +17,7 @@ void Main()
 
 	Texture texture = RandomBool() ? mesuTexture : osuTexture;
 
-	Print(L"Left : Mesu", L"Right : Osu");
+	Print(L"左クリック : メス,  右クリック : オス");
 	
 	while (System::Update())
 	{
@@ -44,8 +44,6 @@ void Main()
 			texture = RandomBool() ? mesuTexture : osuTexture;
 		}
 		
-		ClearPrint();
-
 		const double t = stopwatch.ms() / 1000.0;
 
 		diceMesh
