@@ -54,7 +54,5 @@ void Main()
 			.rotated(Quaternion::Yaw(60))
 			.rotated(Quaternion::Yaw(t))
 			.draw(texture);
-
-		// Print(texture == osuTexture ? L"osu" : L"mesu");
 	}
 }
